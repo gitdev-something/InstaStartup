@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+backend/venv/
+__pycache__/
+*.pyc
+
+# Next.js
+.next/
+out/
+
+# Assets & Temp
+backend/temp_assets/
+backend/temp_asset/
+*.mp4
+*.xlsx
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db

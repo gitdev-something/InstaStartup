@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaStartup | Automated Content Creator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #FFD700;
+            --black: #000000;
+            --card: #121212;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--black);
+            color: white;
+            overflow-x: hidden;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000 100%);
+        }
+        h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            margin: 0;
+        }
+        h1 span {
+            color: var(--gold);
+        }
+        .tagline {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.4);
+            margin-top: 1rem;
+            max-width: 600px;
+        }
+        .btn {
+            margin-top: 3rem;
+            padding: 1rem 2.5rem;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 0.5rem;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .features {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            transition: border-color 0.3s;
+        }
+        .card:hover {
+            border-color: var(--gold);
+        }
+        .card h3 {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        .card p {
+            color: rgba(255,255,255,0.6);
+            line-height: 1.6;
+        }
+        .preview-mockup {
+            margin-top: 4rem;
+            width: 80%;
+            max-width: 800px;
+            aspect-ratio: 16/9;
+            background: #111;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 1rem;
+            box-shadow: 0 0 50px rgba(0,0,0,1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .preview-mockup::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ff5f56;
+            box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>INSTA<span>STARTUP</span></h1>
+        <p class="tagline">Automate high-end Instagram educational content with professional Remotion animations and AI-driven workflows.</p>
+        
+        <div class="preview-mockup">
+            <div style="color: var(--gold); font-weight: 900; font-size: 2rem;">REMOTION NATIVE</div>
+        </div>
+
+        <a href="https://github.com/your-username/instastartup" class="btn">View on GitHub</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Remotion Engine</h3>
+            <p>Harness the power of React to render pixel-perfect video animations at 1080x1080 resolution.</p>
+        </div>
+        <div class="card">
+            <h3>Instagrapi Pipeline</h3>
+            <p>Automated uploads with intelligent human-like delays to keep your account safe and growing.</p>
+        </div>
+        <div class="card">
+            <h3>Excel to Video</h3>
+            <p>Bulk process hundreds of educational facts directly from a simple spreadsheet.</p>
+        </div>
+    </section>
+</body>
+</html>
